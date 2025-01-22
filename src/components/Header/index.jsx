@@ -31,14 +31,17 @@ const Header = () => {
   };
 
   return (
-    <Paper>
+    <Paper
+      sx={{ width: "100vw", position: "fixed", top: 0, left: 0, zIndex: 1000 }}
+    >
       <Stack
         direction="row"
         spacing={2}
         sx={{
           justifyContent: "space-between",
           alignItems: "center",
-          padding: "16px 100px",
+          padding: "16px 50px",
+          width: "100%",
         }}
       >
         <Stack direction="row" spacing={4}>

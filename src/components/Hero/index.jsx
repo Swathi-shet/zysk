@@ -9,6 +9,7 @@ const StyledTypography = styled(Typography)`
   font-size: 50px;
   line-height: 72px;
   color: #101828;
+  text-align: center;
 `;
 
 const StyledInfo = styled(Typography)`
@@ -19,12 +20,25 @@ const StyledInfo = styled(Typography)`
   width: 600px;
   text-align: center;
 `;
+const ResponsiveImageContainer = styled(Stack)`
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+`;
+
+const ResponsiveImage = styled.img`
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+`;
 
 const Hero = () => {
   return (
     <Stack
       sx={{
-        padding: "100px 100px",
+        paddingTop: "100px",
         justifyContent: "center",
         alignItems: "center",
       }}
@@ -69,18 +83,33 @@ const Hero = () => {
       <Stack direction="row" spacing={2} sx={{ marginBottom: "35px" }}>
         <Button
           variant="outlined"
+          color="inherit"
           startIcon={
             <img src={PlayIcon} alt="play icon" width={16} height={16} />
           }
-          sx={{ borderRadius: "30px" }}
+          sx={{
+            borderRadius: "30px",
+            textTransform: "none",
+            borderColor: "#D0D5DD",
+          }}
         >
           Demo
         </Button>
-        <Button variant="contained" color="error" sx={{ borderRadius: "30px" }}>
+        <Button
+          variant="contained"
+          color="error"
+          sx={{
+            borderRadius: "30px",
+            textTransform: "none",
+            boxShadow: "none",
+          }}
+        >
           Sign up
         </Button>
       </Stack>
-      <img src={ContainerImg} alt="Container-Image" />
+      <ResponsiveImageContainer>
+        <ResponsiveImage src={ContainerImg} alt="Container-Image" />
+      </ResponsiveImageContainer>
     </Stack>
   );
 };
