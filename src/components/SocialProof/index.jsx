@@ -9,7 +9,7 @@ import styled from "styled-components";
 
 const Wrapper = styled(Stack)`
   align-items: center;
-  padding: 90px 0;
+  padding: 80px 0;
 `;
 
 const ImageContainer = styled(Stack)`
