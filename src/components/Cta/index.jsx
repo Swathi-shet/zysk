@@ -3,7 +3,7 @@ import { Button, Stack, Typography } from "@mui/material";
 const Cta = () => {
   return (
     <Stack
-      sx={{ width: "100%", padding: "96px 0", backgroundColor: "#F9FAFB" }}
+      sx={{ width: "100%", padding: "55px 0", backgroundColor: "#F9FAFB" }}
       justifyContent="center"
       alignItems="center"
     >

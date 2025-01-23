@@ -5,7 +5,7 @@ import blogCardsData from "./blogCardsData";
 const Blog = () => {
   return (
     <Stack
-      sx={{ width: "100%", height: "100%", padding: "0 10px" }}
+      sx={{ width: "100%", height: "100%", padding: "45px 10px" }}
       justifyContent={"center"}
       alignItems={"center"}
       spacing={5}
