@@ -4,7 +4,7 @@ import featuresData from "./featuresData";
 
 const Features = () => {
   return (
-    <Stack justifyContent="center" alignItems="center" sx={{ padding: "80px 0" }} spacing={3}>
+    <Stack justifyContent="center" alignItems="center" sx={{ padding: "60px 0" }} spacing={3}>
       <Stack sx={{ width: "570px" }}>
         <Typography variant="body1" sx={{ textAlign: "center", marginBottom: "8px", color: "#E63F3A" }}>Features</Typography>
         <Typography variant="h5" sx={{ textAlign: "center", marginBottom: "18px", color: "#101828" }}>
