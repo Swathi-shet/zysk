@@ -4,7 +4,8 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/zysk/', 
   build: {
-    outDir: 'dist', // Explicitly set the output folder
+    outDir: 'dist',
   },
 })

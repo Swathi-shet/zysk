@@ -14,6 +14,7 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import styled from "styled-components";
 import MenuIcon from "@mui/icons-material/Menu";
 import Logo from "../../assets/Logo";
+import profile from "../../assets/header/profile.png";
 
 const StyledButton = styled(Button)`
   font-weight: 600;
@@ -140,11 +141,11 @@ const Header = () => {
             </Menu>
           </>
         ) : (
-          <Avatar alt="profile" src="src/assets/header/profile.png" />
+          <Avatar alt="profile" src={profile} />
         )}
       </Stack>
     </Paper>
   );
 };
-
+``
 export default Header;

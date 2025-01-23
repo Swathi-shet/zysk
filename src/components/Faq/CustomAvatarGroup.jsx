@@ -1,4 +1,7 @@
 import { Avatar, AvatarGroup, Box } from "@mui/material";
+import profile from "../../assets/header/profile.png";
+import avtr2 from "../../assets/faq/avtr2.png";
+import avtr3 from "../../assets/faq/avtr3.png";
 
 const CustomAvatarGroup = () => {
   return (
@@ -15,17 +18,17 @@ const CustomAvatarGroup = () => {
       >
         <Avatar
           alt="Left Person"
-          src="src/assets/faq/avtr2.png"
+          src={avtr2}
           sx={{ transform: "translateY(6px)", width: "38px", height: "38px" }}
         />
         <Avatar
           alt="Middle Person"
-          src="src/assets/header/profile.png"
+          src={profile}
           sx={{ zIndex: 100, width: "42px", height: "42px" }}
         />
         <Avatar
           alt="Right Person"
-          src="src/assets/faq/avtr3.png"
+          src={avtr3}
           sx={{ transform: "translateY(6px)", width: "38px", height: "38px" }}
         />
       </AvatarGroup>
