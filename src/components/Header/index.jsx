@@ -47,7 +47,9 @@ const Header = () => {
         <Stack direction="row" spacing={4}>
           <img src="src/assets/logo.png" alt="logo" />
           <Stack direction="row" spacing={2}>
-            <StyledButton color="inherit">Home</StyledButton>
+            <StyledButton color="inherit">
+            <Typography variant="styledButton">Home</Typography>
+            </StyledButton>
             <div>
               <StyledButton color="inherit" onClick={handleClick}>
                 <Stack direction="row" spacing={1} alignItems="center">
@@ -88,7 +90,9 @@ const Header = () => {
               </Menu>
             </div>
 
-            <StyledButton color="inherit">Pricing</StyledButton>
+            <StyledButton color="inherit">
+            <Typography variant="styledButton">Pricing</Typography>
+            </StyledButton>
           </Stack>
         </Stack>
         <Avatar alt="profile" src="src/assets/header/profile.png" />

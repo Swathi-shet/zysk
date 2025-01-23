@@ -4,7 +4,7 @@ import FAQAccordion from "./FAQAccordion";
 
 const Faq = () => {
   return (
-    <Stack justifyContent={"center"} alignItems={"center"}>
+    <Stack justifyContent={"center"} alignItems={"center"} sx={{ padding: "60px 0 30px 0" }}>
       <Stack justifyContent={"center"} alignItems={"center"} gap={1}>
         <Typography variant="h5" sx={{ color: "#101828", fontWeight: "600" }}>
           Frequently asked questions
@@ -17,7 +17,17 @@ const Faq = () => {
         <FAQAccordion />
       </Stack>
 
-      <Stack justifyContent={"center"} alignItems={"center"} gap={1} sx={{ backgroundColor: "#F9FAFB", padding: "20px 0", width: "100%", margin: "0 80px" }}>
+      <Stack
+        justifyContent={"center"}
+        alignItems={"center"}
+        gap={1}
+        sx={{
+          backgroundColor: "#F9FAFB",
+          padding: "20px 0",
+          width: "100%",
+          margin: "0 80px",
+        }}
+      >
         <CustomAvatarGroup />
         <Typography
           sx={{ color: "#101828", fontSize: "14px", fontWeight: "600" }}
