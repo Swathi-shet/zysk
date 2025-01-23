@@ -16,7 +16,7 @@ const Testimonial = () => {
       spacing={2}
     >
       <SisyphusLogo />
-      <Typography variant="h4" sx={{ color: "#101828", width: "60%" }}>
+      <Typography variant="h5" sx={{ color: "#101828", width: "60%" }}>
         We’ve been using Untitled to kick start every new project and can’t
         imagine working without it.
       </Typography>

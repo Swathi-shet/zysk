@@ -17,7 +17,7 @@ function App() {
       <Box
         sx={{
           width: "100%",
-          padding: "0 20px",
+          padding: "0px",
           marginTop: "64px",
         }}
       >

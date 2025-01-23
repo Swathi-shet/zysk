@@ -72,7 +72,7 @@ const Hero = () => {
         </Button>
         Check out the team dashboard
       </Button>
-      <StyledTypography variant="h3" sx={{ marginBottom: "20px" }}>
+      <StyledTypography variant="h4" sx={{ marginBottom: "20px" }}>
         Beautiful analytics to grow smarter
       </StyledTypography>
       <StyledInfo variant="body1" sx={{ marginBottom: "40px" }}>
