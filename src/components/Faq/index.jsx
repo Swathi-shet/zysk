@@ -40,8 +40,7 @@ const Faq = () => {
         </Typography>
         <Button
           variant="contained"
-          color="error"
-          sx={{ marginTop: "12px", textTransform: "none" }}
+          sx={{ marginTop: "12px", textTransform: "none", backgroundColor: "#E63F3A" }}
         >
           Get in touch
         </Button>

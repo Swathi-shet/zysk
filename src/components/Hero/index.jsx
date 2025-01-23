@@ -10,6 +10,16 @@ const StyledTypography = styled(Typography)`
   line-height: 72px;
   color: #101828;
   text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 28px;
+    line-height: 36px;
+  }
 `;
 
 const StyledInfo = styled(Typography)`
@@ -17,9 +27,22 @@ const StyledInfo = styled(Typography)`
   font-size: 20px;
   line-height: 30px;
   color: #475467;
-  width: 600px;
+  width: 50%;
   text-align: center;
+
+  @media (max-width: 768px) {
+    width: 70%;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  @media (max-width: 480px) {
+    width: 90%;
+    font-size: 16px;
+    line-height: 24px;
+  }
 `;
+
 const ResponsiveImageContainer = styled(Stack)`
   position: relative;
   width: 100%;
@@ -35,12 +58,14 @@ const ResponsiveImage = styled.img`
 `;
 
 const Hero = () => {
+
   return (
     <Stack
       sx={{
-        paddingTop: "100px",
+        paddingTop: { xs: "60px", sm: "100px" },
         justifyContent: "center",
         alignItems: "center",
+        width: "100%",
       }}
     >
       <Button
@@ -52,6 +77,8 @@ const Hero = () => {
           textTransform: "none",
           marginBottom: "15px",
           backgroundColor: "rgba(230, 63, 58, 0.1)",
+          fontSize: { xs: "12px", sm: "14px" },
+          color: "#E63F3A",
         }}
         endIcon={
           <img src={ArrowRight} alt="play icon" width={12} height={12} />
@@ -66,6 +93,8 @@ const Hero = () => {
             padding: "0.2px 10px",
             textTransform: "none",
             backgroundColor: "#fff",
+            fontSize: { xs: "12px", sm: "14px" },
+            color: "#E63F3A",
           }}
         >
           New feature
@@ -91,17 +120,19 @@ const Hero = () => {
             borderRadius: "30px",
             textTransform: "none",
             borderColor: "#D0D5DD",
+            fontSize: { xs: "12px", sm: "14px" },
           }}
         >
           Demo
         </Button>
         <Button
           variant="contained"
-          color="error"
           sx={{
             borderRadius: "30px",
             textTransform: "none",
             boxShadow: "none",
+            fontSize: { xs: "12px", sm: "14px" },
+            backgroundColor: "#E63F3A"
           }}
         >
           Sign up
