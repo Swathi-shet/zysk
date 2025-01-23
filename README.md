@@ -10,3 +10,5 @@ Currently, two official plugins are available:
 - Run,
 - npm install
 - npm run dev
+
+- Figma: https://www.figma.com/design/6V9PukAvgwAWA35uHV5l6b/React-Assignment?node-id=1-18169&t=s52PUP9RyaMiF7O8-0
