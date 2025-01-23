@@ -1,4 +1,5 @@
 import { Box, Link, Typography, Divider } from "@mui/material";
+import Logo from "../../assets/Logo";
 
 const Footer = () => {
   return (
@@ -122,11 +123,7 @@ const Footer = () => {
           gap: 2,
         }}
       >
-        <img
-          src="src/assets/logo.png"
-          alt="Zysk Logo"
-          style={{ height: "24px" }}
-        />
+        <Logo />
         <Typography variant="body2" color="text.secondary" sx={{ color: "#667085", fontSize: "14px", fontWeight: "400", lineHeight: "24px" }}>
           © 2077 zysktechnologies. All rights reserved.
         </Typography>

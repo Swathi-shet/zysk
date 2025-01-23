@@ -13,6 +13,7 @@ import MenuItem from "@mui/material/MenuItem";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import styled from "styled-components";
 import MenuIcon from "@mui/icons-material/Menu";
+import Logo from "../../assets/Logo";
 
 const StyledButton = styled(Button)`
   font-weight: 600;
@@ -70,11 +71,7 @@ const Header = () => {
         }}
       >
         <Stack direction="row" spacing={4} alignItems="center">
-          <img
-            src="src/assets/logo.png"
-            alt="logo"
-            style={{ height: "40px" }}
-          />
+          <Logo />
           {!isMobile && (
             <Stack direction="row" spacing={2}>
               <StyledButton color="inherit">
