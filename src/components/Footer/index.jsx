@@ -119,6 +119,7 @@ const Footer = () => {
           justifyContent: "space-between",
           alignItems: "center",
           flexWrap: "wrap",
+          gap: 2,
         }}
       >
         <img
